@@ -1,5 +1,31 @@
 body {
   text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.line-one,
+.line-two {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .btn {
@@ -8,11 +34,17 @@ body {
   border-radius: 20%;
   border: 10px solid black;
   margin: 2.5rem;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
-.btn-container {
-  display: flex;
-  justify-content: center;
+.btn:hover {
+  transform: scale(1.1);
 }
 
 .yellow {
@@ -37,4 +69,43 @@ body {
 
 .userflash {
   background-color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    height: 150px;
+    width: 150px;
+    margin: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    height: 120px;
+    width: 120px;
+    margin: 1rem;
+    font-size: 1.6rem;
+  }
 }
